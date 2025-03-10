@@ -1,12 +1,7 @@
 {
-  "name": "neon-database-project",
+  "name": "vercel-kv-example",
   "version": "1.0.0",
-  "description": "Een project dat verbinding maakt met een Neon PostgreSQL database",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
-    "pg": "^8.7.1"
+    "@vercel/kv": "^1.0.0"
   }
 }
