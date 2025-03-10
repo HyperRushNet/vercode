@@ -9,7 +9,7 @@ export default function handler(req, res) {
     }
 
     if (codes[email] && codes[email] === code) {
-        delete codes[email]; // Verwijder de code na gebruik
+        delete codes[email]; // Verwijder de code na verificatie
         return res.status(200).json({ success: true, message: "Verificatie geslaagd!" });
     } else {
         return res.status(400).json({ error: "Ongeldige of verlopen code" });
